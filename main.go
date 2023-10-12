@@ -15,7 +15,7 @@ func main() {
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.JSON(fiber.Map{
-			"message": "Hey! You've hit MicroDKIM. This is a service used by https://helium.ws to create DKIM keys.",
+			"_message": "Hey! You've hit MicroDKIM. This is a service used by https://helium.ws to create DKIM keys.",
 			"canIuse?": "Sure! Just send a GET request to https://dkim.helium.ws/new and you'll recieve a private and public key.",
 			"error": false,
 		})
